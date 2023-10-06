@@ -1,9 +1,10 @@
+import Navbar from "../Navbar/Navbar"
 
 const Header = () => {
   return (
-    <div>
-      Header
-    </div>
+    <header className="max-w-screen-xl mx-auto px-3 mt-8">
+      <Navbar></Navbar>
+    </header>
   )
 }
 
