@@ -7,6 +7,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 import ServiceCard from '../Shared/ServiceCard/ServiceCard';
 import Organizers from './Organizers';
 import HappyClients from './HappyClients';
+import Success from './Success';
 
 
 const Home = () => {
@@ -37,14 +38,19 @@ const Home = () => {
           </div>
         </section>
         {/* Our Organizers */}
-        <section className="py-10 md:py-12 lg:py-16 bg-cyan-50">
+        <section className="py-10 md:py-12 lg:pt-16 lg:pb-24 bg-cyan-50">
           <div className="max-w-screen-xl mx-auto px-3">
             <h2 className="divider text-3xl md:text-4xl lg:text-5xl font-bold text-center bg-gradient-to-r from-indigo-700 to-purple-500 bg-clip-text text-transparent py-10">Our Team</h2>
             <Organizers></Organizers>
           </div>
         </section>
-        {/* Our Clients */}
         <section className="py-10 md:py-12 lg:py-16">
+          <div className="max-w-screen-xl mx-auto px-3">
+            <Success></Success>
+          </div>
+        </section>
+        {/* Our Clients */}
+        <section className="py-10 md:py-12 lg:py-16 bg-purple-50">
           <div className="max-w-screen-xl mx-auto px-3">
             <h2 className="divider text-3xl md:text-4xl lg:text-5xl font-bold text-center bg-gradient-to-r from-indigo-700 to-purple-500 bg-clip-text text-transparent py-10">Happy Clients</h2>
             <HappyClients></HappyClients>
