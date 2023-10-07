@@ -46,5 +46,45 @@
     "price": 1200,
     "shortDescription": "Welcome the arrival of a new bundle of joy with an adorable baby shower.",
     "longDescription": "Our Adorable Baby Shower Delight package is perfect for parents-to-be who want to celebrate the upcoming arrival of their little one. With cute and charming decor, fun games, and a delightful menu, your baby shower will be a heartwarming event filled with love and anticipation."
+  },
+  {
+    "id": 7,
+    "title": "Family Reunion Fun",
+    "image": "https://i.ibb.co/TvrKXxg/family-reunion.jpg",
+    "price": "$1800",
+    "shortDescription": "Reconnect with family and create lasting memories at our family reunion event.",
+    "longDescription": "Our Family Reunion Fun package is designed to bring generations together for a day of fun, laughter, and bonding. With engaging activities, delicious food, and a warm atmosphere, your family reunion will be a memorable event for everyone."
+  },
+  {
+    "id": 8,
+    "title": "Festive Holiday Party",
+    "image": "https://i.ibb.co/b1qXYnv/festive-holiday.jpg",
+    "price": 1600,
+    "shortDescription": "Celebrate the holiday season in style with our festive holiday party package.",
+    "longDescription": "Spread the holiday cheer with our Festive Holiday Party package. We'll decorate the venue with sparkling lights and festive ornaments, provide delightful holiday treats, and organize entertainment to ensure your holiday party is filled with joy and merriment."
+  },
+  {
+    "id": 9,
+    "title": "Seasonal Event Spectacular",
+    "image": "https://i.ibb.co/7tpPwmv/seasonal-event.jpg",
+    "price": 1400,
+    "shortDescription": "Embrace the spirit of the season with our seasonal event spectacular package.",
+    "longDescription": "Whether it's spring, summer, fall, or winter, our Seasonal Event Spectacular package captures the essence of the season. From themed decorations to seasonal delicacies, we'll create a unique and immersive experience that celebrates the beauty of the changing seasons."
+  },
+  {
+    "id": 10,
+    "title": "Gender Reveal Party",
+    "image": "https://i.ibb.co/Ykqf65n/gender-reveal.png",
+    "price": 1000,
+    "shortDescription": "Share the excitement of your baby's gender with a creative gender reveal party.",
+    "longDescription": "Announce the gender of your baby in a fun and unique way with our Gender Reveal Party package. We'll help you plan a creative reveal, provide themed decorations, and ensure your guests are filled with anticipation. It's a moment you'll cherish forever."
+  },
+  {
+    "id": 11,
+    "title": "1-Day Workshop Event",
+    "image": "https://i.ibb.co/mtCZmd6/1day-workshop.webp",
+    "price": 1200,
+    "shortDescription": "Host a successful workshop with our comprehensive 1-day workshop event package.",
+    "longDescription": "Organize a productive and engaging workshop with our 1-Day Workshop Event package. We provide the ideal venue, necessary equipment, catering services, and logistical support to ensure your workshop runs smoothly. Focus on your content while we take care of the event details."
   }
 ]
