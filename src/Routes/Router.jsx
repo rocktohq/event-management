@@ -9,6 +9,10 @@ import PrivateRoute from "./PrivateRoute";
 import AllServices from "../pages/AllServices/AllServices";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import Profile from "../pages/Profile/Profile";
+import Cart from "../pages/Cart/Cart";
+import Wishlist from "../Wishlist/Wishlist";
+import Settings from "../pages/Settings/Settings";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +50,24 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>
+      },
+      {
+        path: "/profile",
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>,
+      },
+      {
+        path: "/settings",
+        element: <PrivateRoute><Settings></Settings></PrivateRoute>,
+      },
+      {
+        path: "/wishlist",
+        element: <PrivateRoute><Wishlist></Wishlist></PrivateRoute>,
+        loader: () => fetch("/services.json")
+      },
+      {
+        path: "/cart",
+        element: <PrivateRoute><Cart></Cart></PrivateRoute>,
+        loader: () => fetch("/services.json")
       }
     ]
   }
