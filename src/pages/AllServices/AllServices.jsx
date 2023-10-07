@@ -9,7 +9,6 @@ const AllServices = () => {
 
   const [showServices, setShowServices] = useState(8);
   const services = useLoaderData();
-  console.log(services)
 
   return (
     <HelmetProvider>

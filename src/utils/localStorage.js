@@ -20,4 +20,15 @@ const saveLocalStorageData = (id, option) => {
   localStorage.setItem(option, JSON.stringify(localStorageData));
 }
 
-export { getLocalStorageData, saveLocalStorageData };
+// Remove Data from the Local Storage
+const removeLocalStorageData = (option, id) => {
+  const localStorageData = getLocalStorageData(option);
+
+  if (localStorageData.includes(id)) {
+    const newData = localStorageData.filter(data => data !== id);
+    localStorage.setItem(option, JSON.stringify(newData));
+    return true;
+  }
+}
+
+export { getLocalStorageData, saveLocalStorageData, removeLocalStorageData };

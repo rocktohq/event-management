@@ -8,7 +8,6 @@ const Service = ({ service }) => {
   const { id, title, image, price, longDescription } = service;
 
   const handleAddBtn = (id, option) => {
-    console.log(option, id);
 
     // Save to LocalStorage
     const save = saveLocalStorageData(id, option);
