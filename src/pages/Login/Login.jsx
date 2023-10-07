@@ -4,6 +4,9 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useContext } from "react";
 import toast from "react-hot-toast";
+import LoginImg from "../../assets/login.jpg";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Login = () => {
 
@@ -51,7 +54,7 @@ const Login = () => {
       .catch(error => {
         toast.dismiss();
         toast.error(error.message);
-        console.log(error.code);
+        console.error(error.code);
       })
   }
 
@@ -79,11 +82,15 @@ const Login = () => {
       <Helmet>
         <title>eManage - Login</title>
       </Helmet>
+      <Header></Header>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <h1 className="text-5xl font-bold">Login now!</h1>
-            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <p className="my-5">Please login to get access of unlimited features of our eManage website.</p>
+            <figure className="hidden lg:block">
+              <img className="w-3/6 mx-auto rounded-2xl" src={LoginImg} alt="Login" />
+            </figure>
           </div>
           <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
             <form onSubmit={handleLogin} className="card-body pb-0">
@@ -114,6 +121,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </HelmetProvider>
   )
 }

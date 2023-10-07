@@ -3,6 +3,9 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import toast from "react-hot-toast";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import RegisterImg from "../../assets/register.jpg";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
 
 const Register = () => {
 
@@ -95,11 +98,15 @@ const Register = () => {
       <Helmet>
         <title>eManage - Register</title>
       </Helmet>
+      <Header></Header>
       <div className="hero min-h-screen bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <h1 className="text-5xl font-bold">Register now!</h1>
-            <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <p className="my-5">Please Register a new account to get access of unlimited features of our eManage website.</p>
+            <figure className="hidden lg:block">
+              <img className="w-3/6 mx-auto rounded-2xl" src={RegisterImg} alt="Register" />
+            </figure>
           </div>
           <div className="card flex-shrink-0 w-full max-w-lg shadow-2xl bg-base-100">
             <form onSubmit={handleSubmit} className="card-body">
@@ -147,6 +154,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </HelmetProvider>
   )
 }
