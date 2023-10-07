@@ -21,8 +21,6 @@ const ServiceCard = ({ service }) => {
   const aosEffects = ["fade-up", "fade-down", "fade-right", "fade-left", "flip-left", "flip-right", "zoom-in", "zoom-out"]
   const randomEffect = Math.floor(Math.random() * aosEffects.length);
 
-  console.log(randomEffect)
-
   return (
     <div className="card p-0 shadow-lg flex flex-col justify-between rounded-md" data-aos={aosEffects[randomEffect]}>
       <figure className="h-48">
@@ -32,7 +30,7 @@ const ServiceCard = ({ service }) => {
         <div className="card-body p-0">
           <h2 className="font-bold">{title}</h2>
           <p className="text-gray-500 text-justify">{shortDescription}</p>
-          <p>Price: <span className="text-gray-500">{price}</span></p>
+          <p>Price: <span className="text-gray-500">${price}</span></p>
         </div>
       </div>
       <div className="p-5">
