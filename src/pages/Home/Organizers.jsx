@@ -24,16 +24,16 @@ const Organizers = () => {
         <p className="text-gray-500 mt-5">Our strong event management team covers back and front of house processes to ensure each element of in-person events is executed flawlessly. </p>
       </div>
       <div className="grid grid-cols-2 gap-5 flex-1">
-        <div className="w-64 h-64 overflow-hidden" data-aos="fade-down">
+        <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-down">
           <img className="" src={Member1} alt="Team Member-1" />
         </div>
-        <div className="w-64 h-64 overflow-hidden" data-aos="fade-left">
+        <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-left">
           <img src={Member2} alt="Team Member-2" />
         </div>
-        <div className="w-64 h-64 overflow-hidden" data-aos="fade-up">
+        <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-up">
           <img src={Member3} alt="Team Member-3" />
         </div>
-        <div className="w-64 h-64 overflow-hidden" data-aos="fade-right">
+        <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-right">
           <img src={Member4} alt="Team Member-4" />
         </div>
       </div>

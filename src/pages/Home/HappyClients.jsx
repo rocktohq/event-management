@@ -1,5 +1,10 @@
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -15,55 +20,68 @@ const HappyClients = () => {
   return (
     <div>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
+        effect={'coverflow'}
+        loop={true}
+        grabCursor={true}
+        centeredSlides={true}
         slidesPerView={2}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        pagination={true}
+        modules={[Autoplay, EffectCoverflow, Pagination]}
+        className="mySwiper"
       >
         <SwiperSlide>
-          <div className='flex gap-5'>
-            <img className=' w-56 h-56 rounded-full' src={Client1} alt="" />
+          <div className='flex flex-col lg:flex-row gap-5 items-center'>
+            <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client1} alt="" />
             <div>
               <h3 className='font-semibold'>Jason Backer</h3>
-              <p>Absolutely Phenomenal Service! eManage turned our wedding into a fairytale. Their attention to detail and personalized approach made our day truly magical. Our guests could not stop raving about how seamless and beautiful everything was. Thank you for making our dreams come true!</p>
+              <p>Absolutely Phenomenal Service! eManage turned our wedding into a fairytale. Their attention to detail and personalized approach made our day truly magical.</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='flex gap-5'>
-            <img className=' w-56 h-56 rounded-full' src={Client2} alt="" />
+          <div className='flex flex-col lg:flex-row gap-5 items-center'>
+            <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client2} alt="" />
             <div>
               <h3 className='font-semibold'>Johny Depp</h3>
-              <p>Incredible Experience! eManage managed my birthday party flawlessly. They understood my vision perfectly and executed it beyond my expectations. The teams creativity and dedication shone through, creating an event that was not only visually stunning but also incredibly enjoyable. I can not thank them enough for their outstanding work!</p>
+              <p>Incredible Experience! eManage managed my birthday party flawlessly. They understood my vision perfectly and executed it beyond my expectations.</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='flex gap-5'>
-            <img className=' w-56 h-56 rounded-full' src={Client3} alt="" />
+          <div className='flex flex-col lg:flex-row gap-5 items-center'>
+            <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client3} alt="" />
             <div>
               <h3 className='font-semibold'>Amelia Lottie</h3>
-              <p>Exemplary Professionalism! We hired eManage for our baby shower event, and they delivered exceptional service. From the planning stages to the event day, their team was efficient, organized, and attentive to our companys specific needs. The event was a grand success, and our clients were highly impressed. We will definitely be working with them again!</p>
+              <p>Exemplary Professionalism! We hired eManage for our baby shower event, and they delivered exceptional service.</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='flex gap-5'>
-            <img className=' w-56 h-56 rounded-full' src={Client4} alt="" />
+          <div className='flex flex-col lg:flex-row gap-5 items-center'>
+            <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client4} alt="" />
             <div>
               <h3 className='font-semibold'>Nicolas Watson</h3>
-              <p>Best Decision Ever! Hiring eManage for our retirement party was the best decision we made. They took care of every detail, allowing us to focus on celebrating. The decor, entertainment, and overall ambiance were perfect. Our guests were delighted, and we could not have asked for a better send-off into retirement. Thank you for making it unforgettable!</p>
+              <p>Best Decision Ever! Hiring eManage for our retirement party was the best decision we made. They took care of every detail, allowing us to focus on celebrating.</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className='flex gap-5'>
-            <img className=' w-56 h-56 rounded-full' src={Client5} alt="" />
+          <div className='flex flex-col lg:flex-row gap-5 items-center'>
+            <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client5} alt="" />
             <div>
               <h3 className='font-semibold'>Natasa Willson</h3>
-              <p>Exceptional Team! We recently had eManage plan our family reunion, and we were blown away by their professionalism and creativity. Despite the diverse needs of our family, they managed to create an event that pleased everyone. The coordination was seamless, and the activities were engaging for all age groups. Our family had a fantastic time, and we are grateful to [Your Company Name] for making our reunion a memorable experience!</p>
+              <p>Exceptional Team! We recently had eManage plan our family reunion, and we were blown away by their professionalism and creativity.</p>
             </div>
           </div>
         </SwiperSlide>
