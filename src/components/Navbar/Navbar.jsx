@@ -1,14 +1,23 @@
 import { useContext } from "react"
 import { AuthContext } from "../../providers/AuthProvider"
 import Logo from "/favicon.png"
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaCartArrowDown, FaHeart, FaUserAlt } from "react-icons/fa";
+import { BiLogOutCircle } from "react-icons/bi";
 import { AiFillSetting } from "react-icons/ai";
 
 const Navbar = () => {
 
   const { user, logOut } = useContext(AuthContext);
-  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Logout Button
+  const handleLogOutBtn = () => {
+    user &&
+      logOut()
+        .then()
+        .catch()
+  }
 
   // Nav Links
   const navLinks = <>
@@ -25,17 +34,11 @@ const Navbar = () => {
     <li><NavLink to="/wishlist"><FaHeart /> Wishlist</NavLink></li>
     <li><NavLink to="/cart"><FaCartArrowDown /> Cart</NavLink></li>
     <li><NavLink to="/settings"><AiFillSetting /> Settings</NavLink></li>
+    <div className="lg:hidden">
+      <hr className="my-2" />
+      <button onClick={handleLogOutBtn} className="btn btn-ghost btn-sm rounded"><BiLogOutCircle /> Logout</button>
+    </div>
   </>
-
-  // Login/Logout Button
-  const handleLogOutBtn = () => {
-    user ?
-      logOut()
-        .then()
-        .catch()
-      : navigate("/login")
-
-  }
 
   return (
     <div className="navbar bg-base-100">
@@ -57,7 +60,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        {user && <span className="text-lg text-neutral-600 hidden lg:block">{user.displayName}</span>}
+        {user && <><span className="text-lg text-center text-neutral-600 hidden lg:block">{user.displayName}</span><hr /> </>}
         {user && <>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -70,8 +73,9 @@ const Navbar = () => {
             </ul>
           </div>
         </>}
-
-        <button onClick={handleLogOutBtn} className="btn btn-neutral rounded">{user ? "Logout" : "Login"}</button>
+        {user
+          ? <button onClick={handleLogOutBtn} className="btn btn-neutral rounded hidden lg:block">Logout</button>
+          : <Link state={location.pathname} to="/login"><button className="btn btn-neutral rounded">Login</button></Link>}
       </div>
     </div>
   )
