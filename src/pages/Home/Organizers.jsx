@@ -27,13 +27,13 @@ const Organizers = () => {
         <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-down">
           <img className="" src={Member1} alt="Team Member-1" />
         </div>
-        <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-left">
+        <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-up">
           <img src={Member2} alt="Team Member-2" />
         </div>
         <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-up">
           <img src={Member3} alt="Team Member-3" />
         </div>
-        <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-right">
+        <div className="lg:w-56 lg:h-56 overflow-hidden" data-aos="fade-down">
           <img src={Member4} alt="Team Member-4" />
         </div>
       </div>

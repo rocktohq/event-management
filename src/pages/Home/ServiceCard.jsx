@@ -14,11 +14,11 @@ const ServiceCard = ({ service }) => {
       offset: 100,
       duration: 500,
       easing: 'ease-in-sine',
-      
+
     });
   }, [])
 
-  const aosEffects = ["fade-up", "fade-down", "fade-right", "fade-left", "flip-left", "flip-right", "zoom-in", "zoom-out"]
+  const aosEffects = ["fade-up", "fade-down"]
   const randomEffect = Math.floor(Math.random() * aosEffects.length);
 
   return (

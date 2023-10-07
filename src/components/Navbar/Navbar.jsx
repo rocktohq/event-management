@@ -20,6 +20,7 @@ const Navbar = () => {
 
   // Protected Links
   const profilLinks = <>
+    <li>{user?.displayName}</li>
     <li><NavLink to="/profile"><FaUserAlt /> Profile</NavLink></li>
     <li><NavLink to="/wishlist"><FaHeart /> Wishlist</NavLink></li>
     <li><NavLink to="/cart"><FaCartArrowDown /> Cart</NavLink></li>
@@ -56,7 +57,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        {user && <span className="text-lg text-neutral-600">{user.displayName}</span>}
+        {user && <span className="text-lg text-neutral-600 hidden lg:block">{user.displayName}</span>}
         {user && <>
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
