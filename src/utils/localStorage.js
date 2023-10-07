@@ -12,7 +12,7 @@ const getLocalStorageData = (option) => {
 
 // Save Data to the Local Storage
 const saveLocalStorageData = (id, option) => {
-  const localStorageData = getLocalStorageData();
+  const localStorageData = getLocalStorageData(option);
 
   if (localStorageData.includes(id)) return true;
 
