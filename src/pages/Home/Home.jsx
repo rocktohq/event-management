@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { useLoaderData } from 'react-router-dom';
 import ServiceCard from './ServiceCard';
+import Organizers from './Organizers';
 
 
 const Home = () => {
@@ -28,6 +29,11 @@ const Home = () => {
               services?.map(service => <ServiceCard key={service.id} service={service}></ServiceCard>)
             }
           </div>
+        </section>
+        {/* Our Organizers */}
+        <section className="my-12 md:my-16 lg:my-20">
+          <h2 className="divider text-3xl md:text-4xl lg:text-5xl font-bold text-center bg-gradient-to-r from-indigo-700 to-purple-500 bg-clip-text text-transparent py-10">Our Team</h2>
+          <Organizers></Organizers>
         </section>
       </main>
       <Footer></Footer>
