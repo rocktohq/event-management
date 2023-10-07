@@ -30,7 +30,7 @@ const ServiceCard = ({ service }) => {
         <div className="card-body p-0">
           <h2 className="font-bold">{title}</h2>
           <p className="text-gray-500 text-justify">{shortDescription}</p>
-          <p>Price: <span className="text-gray-500">${price}</span></p>
+          <p className="bg-cyan-100 rounded px-5 py-2  w-fit">Price: <span className="text-gray-500">${price}</span></p>
         </div>
       </div>
       <div className="p-5">
