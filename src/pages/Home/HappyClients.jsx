@@ -46,7 +46,7 @@ const HappyClients = () => {
             <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client1} alt="" />
             <div>
               <h3 className='font-semibold'>Jason Backer</h3>
-              <p>Absolutely Phenomenal Service! eManage turned our wedding into a fairytale. Their attention to detail and personalized approach made our day truly magical.</p>
+              <p className='text-justify'>Absolutely Phenomenal Service! eManage turned our wedding into a fairytale. Their attention to detail and personalized approach made our day truly magical.</p>
               <StarRatings
                 rating={4.5}
                 starDimension="20px"
@@ -61,7 +61,7 @@ const HappyClients = () => {
             <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client2} alt="" />
             <div>
               <h3 className='font-semibold'>Johny Depp</h3>
-              <p>Incredible Experience! eManage managed my birthday party flawlessly. They understood my vision perfectly and executed it beyond my expectations.</p>
+              <p className='text-justify'>Incredible Experience! eManage managed my birthday party flawlessly. They understood my vision perfectly and executed it beyond my expectations.</p>
               <StarRatings
                 rating={4.8}
                 starDimension="20px"
@@ -76,7 +76,7 @@ const HappyClients = () => {
             <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client3} alt="" />
             <div>
               <h3 className='font-semibold'>Amelia Lottie</h3>
-              <p>Exemplary Professionalism! We hired eManage for our baby shower event, and they delivered exceptional service.</p>
+              <p className='text-justify'>Exemplary Professionalism! We hired eManage for our baby shower event, and they delivered exceptional service.</p>
               <StarRatings
                 rating={5}
                 starDimension="20px"
@@ -91,7 +91,7 @@ const HappyClients = () => {
             <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client4} alt="" />
             <div>
               <h3 className='font-semibold'>Nicolas Watson</h3>
-              <p>Best Decision Ever! Hiring eManage for our retirement party was the best decision we made. They took care of every detail, allowing us to focus on celebrating.</p>
+              <p className='text-justify'>Best Decision Ever! Hiring eManage for our retirement party was the best decision we made. They took care of every detail, allowing us to focus on celebrating.</p>
               <StarRatings
                 rating={4.7}
                 starDimension="20px"
@@ -106,7 +106,7 @@ const HappyClients = () => {
             <img className='lg:w-56 lg:h-56 rounded-md lg:rounded-full' src={Client5} alt="" />
             <div>
               <h3 className='font-semibold'>Natasa Willson</h3>
-              <p>Exceptional Team! We recently had eManage plan our family reunion, and we were blown away by their professionalism and creativity.</p>
+              <p className='text-justify'>Exceptional Team! We recently had eManage plan our family reunion, and we were blown away by their professionalism and creativity.</p>
               <StarRatings
                 rating={4.9}
                 starDimension="20px"
