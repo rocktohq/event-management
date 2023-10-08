@@ -18,7 +18,7 @@ const AllServices = () => {
       <Header></Header>
       <main>
         {/* All Services */}
-        <section className="py-12">
+        <section className="mb-12">
           <div className="max-w-screen-xl mx-auto px-3">
             <h2 className="divider text-3xl md:text-4xl lg:text-5xl font-bold text-center bg-gradient-to-r from-indigo-700 to-purple-500 bg-clip-text text-transparent py-10">Our Services</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">

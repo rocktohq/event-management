@@ -17,7 +17,9 @@ const Services = () => {
       </Helmet>
       <Header></Header>
       <main className="max-w-screen-xl mx-auto px-3">
-        <Service service={service}></Service>
+        {
+          service && <Service service={service}></Service>
+        }
       </main>
       <Footer></Footer>
     </HelmetProvider>
