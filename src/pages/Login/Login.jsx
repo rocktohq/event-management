@@ -53,7 +53,9 @@ const Login = () => {
       })
       .catch(error => {
         toast.dismiss();
-        toast.error(error.message);
+        if (error.code === "auth/invalid-login-credentials") return toast.error("Wrong email or password!");
+
+        toast.error(error.code);
         console.error(error.code);
       })
   }
