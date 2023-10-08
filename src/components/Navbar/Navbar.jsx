@@ -41,7 +41,7 @@ const Navbar = () => {
   </>
 
   return (
-    <div className="navbar bg-base-100">
+    <nav className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -51,15 +51,15 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <img className="h-12 w-fit" src={Logo} alt="Logo" />
-        <span className="text-4xl text-neutral font-bold ml-2 hidden md:block">Manage</span>
+        <Link to="/"><div className="flex items-center gap-2"><img className="h-10 w-fit" src={Logo} alt="Logo" />
+          <span className="text-4xl text-neutral font-bold hidden md:block">Manage</span></div></Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-lg space-x-2">
           {navLinks}
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end space-x-1">
         {user && <><span className="text-lg text-center text-neutral-600 hidden lg:block">{user.displayName}</span><hr /> </>}
         {user && <>
           <div className="dropdown dropdown-end">
@@ -77,7 +77,7 @@ const Navbar = () => {
           ? <button onClick={handleLogOutBtn} className="btn btn-neutral rounded hidden lg:block">Logout</button>
           : <Link state={location.pathname} to="/login"><button className="btn btn-neutral rounded">Login</button></Link>}
       </div>
-    </div>
+    </nav>
   )
 }
 
