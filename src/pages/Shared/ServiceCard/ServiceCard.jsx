@@ -14,7 +14,7 @@ const ServiceCard = ({ service }) => {
       offset: 100,
       duration: 500,
       easing: 'ease-in-sine',
-
+      once:true,
     });
   }, [])
 
