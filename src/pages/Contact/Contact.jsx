@@ -7,6 +7,18 @@ const Contact = () => {
 
   const handleContact = (event) => {
     event.preventDefault();
+
+    // User Input Data
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const message = event.target.message.value;
+
+    // Data Validation
+    if (name === "" && email === "" && message === "") return toast.error("All fields are required!");
+    if (name === "") return toast.error("Name field is required!");
+    if (email === "") return toast.error("Email field is required!");
+    if (message === "") return toast.error("Message field is required!");
+
     toast.success("Your message has been sent!");
   }
 
@@ -36,7 +48,7 @@ const Contact = () => {
                 <label className="label">
                   <span className="label-text">Message</span>
                 </label>
-                <textarea name="message" rows="5" className="textarea textarea-bordered focus:outline-none"></textarea>
+                <textarea name="message" rows="5" placeholder="Message..." className="textarea textarea-bordered focus:outline-none"></textarea>
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Contact</button>
