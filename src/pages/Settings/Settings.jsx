@@ -59,7 +59,7 @@ const Settings = () => {
                 <label className="label">
                   <span className="label-text">Photo URL</span>
                 </label>
-                <input {...photoState} type="text" name="photo" placeholder={user.photoURL} className="input input-bordered focus:outline-none" />
+                <input onChange={photoState.onChange} type="text" name="photo" placeholder="Photo URL" className="input input-bordered focus:outline-none" />
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Update Profile</button>
