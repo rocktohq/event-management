@@ -4,28 +4,33 @@ import Footer from "../../components/Footer/Footer"
 import { useContext } from "react"
 import { AuthContext } from "../../providers/AuthProvider"
 import toast from "react-hot-toast"
+import useInputState from "../../hooks/useInputState"
+import { useNavigate } from "react-router-dom"
 
 const Settings = () => {
 
+  const navigate = useNavigate();
   const { user, profileUpdate } = useContext(AuthContext);
+  const nameState = useInputState(user.displayName);
+  const photoState = useInputState(user.photoURL);
 
   const handleUpdate = (event) => {
     event.preventDefault();
 
     // Data from User
-    const form = new FormData(event.currentTarget);
-    let name = form.get("name");
-    let photo = form.get("photo");
+    let name = nameState.value;
+    let photo = photoState.value;
 
     if (name === "") name = user.displayName;
     if (photo === "") photo = user.photoURL;
 
     // Updating User Profile
-    toast.loading("Updating User Profile");
+    toast.loading("Updating User Profile...");
     profileUpdate(name, photo)
       .then(() => {
         toast.dismiss();
         toast.success("Profile Updated!");
+        navigate("/settings");
       })
       .catch(error => {
         toast.dismiss();
@@ -48,13 +53,13 @@ const Settings = () => {
                 <label className="label">
                   <span className="label-text">Name</span>
                 </label>
-                <input type="text" name="name" placeholder={user.displayName} className="input input-bordered focus:outline-none" />
+                <input {...nameState} type="text" name="name" placeholder={user.displayName} className="input input-bordered focus:outline-none" />
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Photo URL</span>
                 </label>
-                <input type="text" name="photo" placeholder={user.photoURL} className="input input-bordered focus:outline-none" />
+                <input {...photoState} type="text" name="photo" placeholder={user.photoURL} className="input input-bordered focus:outline-none" />
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Update Profile</button>
