@@ -1,4 +1,4 @@
-import { FaFacebook, FaGithub, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
+import { FaArrowAltCircleRight, FaFacebook, FaGithub, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa"
 import { Link } from "react-router-dom";
 import Logo from "/favicon.png";
 
@@ -9,27 +9,28 @@ const Footer = () => {
         <div className="footer py-10 text-white hidden lg:flex justify-between">
           <nav>
             <header className="footer-title">Services</header>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight /> Branding</Link>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />Design</Link>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />Marketing</Link>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />Advertisement</Link>
           </nav>
           <nav>
             <header className="footer-title">Company</header>
-            <Link className="link link-hover">About us</Link>
-            <Link className="link link-hover">Contact</Link>
-            <Link className="link link-hover">Career</Link>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />Pricing</Link>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />About Us</Link>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />Contact Us</Link>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />Career with Us</Link>
           </nav>
           <nav>
-            <header className="footer-title">Legal</header>
-            <a className="link link-hover">Terms of use</a>
-            <a className="link link-hover">Privacy policy</a>
-            <a className="link link-hover">Cookie policy</a>
+            <header className="footer-title">Data Usages</header>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />Terms of use</Link>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />Privacy policy</Link>
+            <Link className="link link-hover flex gap-1 items-center"><FaArrowAltCircleRight />Cookie policy</Link>
           </nav>
         </div>
-        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-5 py-10 lg:border-t bg-slate-900 text-white lg:border-base-300">
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center gap-5 pt-10 lg:border-t bg-slate-900 text-white lg:border-base-300">
           <aside className="items-center flex gap-2">
-            <img className="w-10" src={Logo} alt="" />
+            <img className="w-10 hidden lg:block" src={Logo} alt="" />
             <div className="flex lg:block gap-1">
               <p>Copyright eManage&trade; 2023</p><p>All right reserved.</p>
             </div>
