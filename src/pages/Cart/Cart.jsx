@@ -32,7 +32,7 @@ const Cart = () => {
                   cartServices?.slice(0, showServices).map(service => <LocalServiceCard key={service.id} service={service} option="cart"></LocalServiceCard>)
                 }
               </div>
-              : <h3 className="text-3xl font-bold text-center">No data found!</h3>
+              : <h3 className="text-3xl font-bold text-center">Cart is empty!</h3>
           }
 
           <div className={`text-center mt-10 ${showServices >= cartServices.length && "hidden"}`}>

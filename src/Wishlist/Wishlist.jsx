@@ -32,7 +32,7 @@ const Wishlist = () => {
                   wishlistServices?.slice(0, showServices).map(service => <LocalServiceCard key={service.id} service={service} option="wishlist"></LocalServiceCard>)
                 }
               </div>
-              : <h3 className="text-3xl font-bold text-center">No data found!</h3>
+              : <h3 className="text-3xl font-bold text-center">Wishlist is empty!</h3>
           }
           <div className={`text-center mt-10 ${showServices >= wishlistServices.length && "hidden"}`}>
             <button onClick={() => setShowServices(wishlistServices.length)} className="btn btn-primary rounded">Show All</button>
