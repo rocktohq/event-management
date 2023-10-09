@@ -6,7 +6,14 @@
     "price": 5000,
     "deal": "Hot Deal",
     "shortDescription": "Create everlasting memories with our elegant wedding package.",
-    "longDescription": "Our Elegant Wedding Package is designed to make your special day truly unforgettable. From exquisite decor to gourmet catering, we take care of every detail to ensure a seamless and magical experience for you and your guests."
+    "longDescription": "Our Elegant Wedding Package is designed to make your special day truly unforgettable. From exquisite decor to gourmet catering, we take care of every detail to ensure a seamless and magical experience for you and your guests.",
+    "features": [
+      "Exquisite floral arrangements",
+      "Gourmet catering with customizable menu",
+      "Professional wedding photographer",
+      "Live music and entertainment",
+      "Dedicated event coordinator"
+    ]
   },
   {
     "id": 2,
@@ -15,7 +22,14 @@
     "price": 2500,
     "deal": "Limited",
     "shortDescription": "Celebrate love and commitment with our joyful engagement package.",
-    "longDescription": "Our Joyful Engagement Celebration package is perfect for couples looking to share their happiness with friends and family. With beautiful decorations, entertainment, and delicious food, your engagement party will be a memorable event filled with love and laughter."
+    "longDescription": "Our Joyful Engagement Celebration package is perfect for couples looking to share their happiness with friends and family. With beautiful decorations, entertainment, and delicious food, your engagement party will be a memorable event filled with love and laughter.",
+    "features": [
+      "Themed decorations and lighting",
+      "Interactive entertainment options",
+      "Delicious catering with a variety of cuisines",
+      "Personalized engagement cake",
+      "Professional event staff"
+    ]
   },
   {
     "id": 3,
@@ -24,7 +38,14 @@
     "price": 1500,
     "deal": false,
     "shortDescription": "Throw a fantastic birthday bash that everyone will remember.",
-    "longDescription": "Celebrate another year of life with our Fantastic Birthday Bash package. Whether it's a milestone birthday or just a casual get-together, we'll create a vibrant and fun atmosphere with themed decorations, mouth-watering cakes, and exciting activities for all ages."
+    "longDescription": "Celebrate another year of life with our Fantastic Birthday Bash package. Whether it's a milestone birthday or just a casual get-together, we'll create a vibrant and fun atmosphere with themed decorations, mouth-watering cakes, and exciting activities for all ages.",
+    "features": [
+      "Themed decorations and party favors",
+      "Customizable birthday cake",
+      "Fun games and activities for all ages",
+      "Variety of catering options",
+      "Event planning consultation"
+    ]
   },
   {
     "id": 4,
@@ -33,7 +54,14 @@
     "price": 3000,
     "deal": "Hot Deal",
     "shortDescription": "Celebrate years of love and togetherness with a memorable anniversary party.",
-    "longDescription": "Our Memorable Anniversary Soiree package is tailored for couples who want to commemorate their years of love and commitment. With romantic decor, live music, and a menu of delectable dishes, your anniversary celebration will be a heartfelt and unforgettable experience."
+    "longDescription": "Our Memorable Anniversary Soiree package is tailored for couples who want to commemorate their years of love and commitment. With romantic decor, live music, and a menu of delectable dishes, your anniversary celebration will be a heartfelt and unforgettable experience.",
+    "features": [
+      "Romantic ambiance with candlelight decor",
+      "Live music performance",
+      "Gourmet dinner menu with wine pairings",
+      "Professional videographer",
+      "Event coordination and planning"
+    ]
   },
   {
     "id": 5,
@@ -42,7 +70,14 @@
     "price": 2000,
     "deal": false,
     "shortDescription": "Bid farewell to the working years with a retirement celebration extravaganza.",
-    "longDescription": "Retiring is a significant milestone, and our Retirement Celebration Extravaganza package is designed to honor this achievement. We'll transform the venue with elegant decorations, organize speeches, and provide gourmet food and drinks, ensuring a dignified and joyful retirement party."
+    "longDescription": "Retiring is a significant milestone, and our Retirement Celebration Extravaganza package is designed to honor this achievement. We'll transform the venue with elegant decorations, organize speeches, and provide gourmet food and drinks, ensuring a dignified and joyful retirement party.",
+    "features": [
+      "Classy decor with retirement-themed elements",
+      "Speeches and tributes",
+      "Gourmet buffet with specialty cocktails",
+      "Retirement cake and desserts",
+      "Event staff and coordination"
+    ]
   },
   {
     "id": 6,
@@ -51,7 +86,14 @@
     "price": 1200,
     "deal": "Exclusiive",
     "shortDescription": "Welcome the arrival of a new bundle of joy with an adorable baby shower.",
-    "longDescription": "Our Adorable Baby Shower Delight package is perfect for parents-to-be who want to celebrate the upcoming arrival of their little one. With cute and charming decor, fun games, and a delightful menu, your baby shower will be a heartwarming event filled with love and anticipation."
+    "longDescription": "Our Adorable Baby Shower Delight package is perfect for parents-to-be who want to celebrate the upcoming arrival of their little one. With cute and charming decor, fun games, and a delightful menu, your baby shower will be a heartwarming event filled with love and anticipation.",
+    "features": [
+      "Baby-themed decorations and party favors",
+      "Interactive baby shower games",
+      "Customized dessert table",
+      "Mocktail bar for guests",
+      "Event planning consultation"
+    ]
   },
   {
     "id": 7,
@@ -60,7 +102,14 @@
     "price": "$1800",
     "deal": "Hot Deal",
     "shortDescription": "Reconnect with family and create lasting memories at our family reunion event.",
-    "longDescription": "Our Family Reunion Fun package is designed to bring generations together for a day of fun, laughter, and bonding. With engaging activities, delicious food, and a warm atmosphere, your family reunion will be a memorable event for everyone."
+    "longDescription": "Our Family Reunion Fun package is designed to bring generations together for a day of fun, laughter, and bonding. With engaging activities, delicious food, and a warm atmosphere, your family reunion will be a memorable event for everyone.",
+    "features": [
+      "Games and activities for all ages",
+      "Buffet with family-favorite dishes",
+      "Professional family portrait session",
+      "Custom family tree display",
+      "Event coordination and planning"
+    ]
   },
   {
     "id": 8,
@@ -69,7 +118,14 @@
     "price": 1600,
     "deal": false,
     "shortDescription": "Celebrate the holiday season in style with our festive holiday party package.",
-    "longDescription": "Spread the holiday cheer with our Festive Holiday Party package. We'll decorate the venue with sparkling lights and festive ornaments, provide delightful holiday treats, and organize entertainment to ensure your holiday party is filled with joy and merriment."
+    "longDescription": "Spread the holiday cheer with our Festive Holiday Party package. We'll decorate the venue with sparkling lights and festive ornaments, provide delightful holiday treats, and organize entertainment to ensure your holiday party is filled with joy and merriment.",
+    "features": [
+      "Holiday-themed decorations and lighting",
+      "Catering with traditional holiday dishes",
+      "Santa Claus appearance for children",
+      "Live carol singers and musical entertainment",
+      "Event staff and coordination"
+    ]
   },
   {
     "id": 9,
@@ -78,7 +134,14 @@
     "price": 1400,
     "deal": false,
     "shortDescription": "Embrace the spirit of the season with our seasonal event spectacular package.",
-    "longDescription": "Whether it's spring, summer, fall, or winter, our Seasonal Event Spectacular package captures the essence of the season. From themed decorations to seasonal delicacies, we'll create a unique and immersive experience that celebrates the beauty of the changing seasons."
+    "longDescription": "Whether it's spring, summer, fall, or winter, our Seasonal Event Spectacular package captures the essence of the season. From themed decorations to seasonal delicacies, we'll create a unique and immersive experience that celebrates the beauty of the changing seasons.",
+    "features": [
+      "Seasonal decor reflecting the chosen theme",
+      "Menu featuring seasonal and locally sourced ingredients",
+      "Interactive seasonal activities for guests",
+      "Themed photo booth with props",
+      "Event planning consultation"
+    ]
   },
   {
     "id": 10,
@@ -87,7 +150,14 @@
     "price": 1000,
     "deal": "Exclusiive",
     "shortDescription": "Share the excitement of your baby's gender with a creative gender reveal party.",
-    "longDescription": "Announce the gender of your baby in a fun and unique way with our Gender Reveal Party package. We'll help you plan a creative reveal, provide themed decorations, and ensure your guests are filled with anticipation. It's a moment you'll cherish forever."
+    "longDescription": "Announce the gender of your baby in a fun and unique way with our Gender Reveal Party package. We'll help you plan a creative reveal, provide themed decorations, and ensure your guests are filled with anticipation. It's a moment you'll cherish forever.",
+    "features": [
+      "Creative gender reveal concept and activities",
+      "Themed decorations in pink and blue",
+      "Gender reveal cake or surprise box",
+      "Customized party favors for guests",
+      "Event staff and coordination"
+    ]
   },
   {
     "id": 11,
@@ -96,6 +166,13 @@
     "price": 1200,
     "deal": false,
     "shortDescription": "Host a successful workshop with our comprehensive 1-day workshop event package.",
-    "longDescription": "Organize a productive and engaging workshop with our 1-Day Workshop Event package. We provide the ideal venue, necessary equipment, catering services, and logistical support to ensure your workshop runs smoothly. Focus on your content while we take care of the event details."
+    "longDescription": "Organize a productive and engaging workshop with our 1-Day Workshop Event package. We provide the ideal venue, necessary equipment, catering services, and logistical support to ensure your workshop runs smoothly. Focus on your content while we take care of the event details.",
+    "features": [
+      "Spacious and equipped venue with seating arrangements",
+      "Audio-visual equipment and technical support",
+      "Customizable catering options for attendees",
+      "Workshop materials and stationery",
+      "On-site event coordinator"
+    ]
   }
 ]
