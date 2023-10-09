@@ -23,4 +23,4 @@
 **Question- 5:**
 
 - **Answer:** C: 3
-- **Explaination:** Here, we are looping through the nums array's elements and the catch is the count += 1; action will be executed when the the condition: if (num) is true. For the first element of the array is 0, therefore the condition is false, so it'll go for the next elements and these all are true. So, the anser is _3_.
+- **Explaination:** Here, we are looping through the nums array's elements and the catch is the count += 1; action will be executed when the the condition: if (num) is true. For the first element of the array is 0, therefore the condition is false, so it'll go for the next elements and these all are true; the action will be executed and value of count variable will be increased by 1 every time. So, the anser is _3_.
