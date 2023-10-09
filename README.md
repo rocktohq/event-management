@@ -23,3 +23,5 @@
 - **Settings:** User's information can be updated in the settings area.
 
 **Live Demo:** https://emanagehq.web.app
+
+**Answers of the Questions:** https://github.com/programming-hero-web-course-4/b8a9-event-management-rocktohq/blob/main/Answers.md
