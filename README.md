@@ -1,6 +1,7 @@
 # Event Management System
 
-**eManage** is a simple _Event Management System_ coded in react with love 💝
+**eManage** is a simple _Event Management System_ coded in react with love.
+**Live Demo:** https://emanagehq.web.app
 
 ## Technologies
 
@@ -22,6 +23,18 @@
 - **User Profile:** User's information will be founded in the user profle section.
 - **Settings:** User's information can be updated in the settings area.
 
-**Live Demo:** https://emanagehq.web.app
+## Setup
 
-**Answers of the Questions:** https://github.com/programming-hero-web-course-4/b8a9-event-management-rocktohq/blob/main/Answers.md
+#### Clone the Repo
+```
+git clone https://github.com/rocktohq/event-management.git
+```
+#### Install Dependencies
+```
+npm install
+```
+#### Run the Project
+```
+npm run dev
+```
+***Note:*** Update ***src > config > firebase.config.js*** and replace your firebase configuration
