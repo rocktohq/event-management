@@ -1,6 +1,6 @@
 # eManage: Event Management System
 
-**eManage** is a simple _Event Management System_ coded in react with love.
+**eManage** is an event management system application. Using this application, event management company can showcase and provide their services to the customers efficiently.
 <br/>
 **Live Demo:** https://emanagehq.web.app
 
